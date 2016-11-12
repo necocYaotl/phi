@@ -1,0 +1,189 @@
+
+/*  ======= base ======  */
+
+body {
+    background-color: #EDF2DC;
+    margin: 0;
+    padding: 0;
+}
+
+#outerdiv {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#phi {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+}
+
+#innerdiv {
+    position: absolute;
+    top: 100px;
+    background-color: #353535;
+    margin: 10px;
+    clear: both;
+    width: 98%;
+    overflow-y: auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: #EDF2DC;
+}
+
+/*  ======= buttons ======  */
+
+#bntOne {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    background-color: #3E8914;
+    border-color: #3E8914;
+}
+
+#bntOne:hover{
+  background-color: #134611;
+}
+
+#bntTwo {
+    position: absolute;
+    right: 110px;
+    top: 20px;
+    background-color: #3E8914;
+    border-color: #3E8914;
+}
+
+#bntTwo:hover{
+  background-color: #134611;
+}
+
+#subbnt{
+  background-color: #3E8914;
+  border-color: #3E8914;
+}
+
+#subbnt:hover{
+  background-color: #0C0300;
+}
+
+#sbnt{
+  background-color: #3E8914;
+  border-color: #3E8914;
+}
+
+#sbnt:hover{
+  background-color: #0C0300;
+}
+
+#exit{
+  color: #0C0300;
+}
+
+/*  ======= navbar ======  */
+
+ul#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.n {
+    float: right;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    background-color: #353535;
+    color: #EDF2DC;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #EDF2DC;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #0C0300;
+    color: #EDF2DC;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: #0C0300;
+    color: #EDF2DC;
+    text-decoration: none;
+}
+
+/* ============modal=========== */
+
+.modal-footer {
+    background-color: #134611;
+}
+
+.modal-header {
+    background-color: #134611;
+    color: #EDF2DC;
+}
+
+.modal-body{
+  background-color: #353535;
+  border-color: #353535;
+}
+
+#form input{
+  background-color: #EDF2DC;
+  color: #0C0300;
+}
+
+/* ============index=========== */
+
+
+#content {
+    padding-top: 150px;
+    padding-right: 10px;
+    float: left;
+    border-right-style: solid;
+    margin: 10px;
+    clear: left;
+    width: 60%;
+}
+
+#sidebar {
+    padding-top: 100px;
+    float: left;
+    margin: 10px;
+    width: 30%;
+}
+
+/* =========== posts ============ */
+
+#t {
+  text-align: center;
+  padding-top: 150px;
+}
+
+#post {
+  text-align: center;
+}
+
+#text {
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: justify;
+}
+
+#t p{
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: justify;

@@ -1,0 +1,32 @@
+{% extends "hanging/base.html" %}
+
+{% block content %}
+
+<div class="terminal">
+  {% for t in terminal %}
+    <p>{{t.text}}</p>
+  {% endfor %}
+
+  <form class="form" action="{% url 'hanging:loop'%}" method="post">
+    {% csrf_token %}
+    &gt;&gt;&gt;<input type="text" name="letter" value="" autocomplete="off" autofocus>
+    <input type="submit" name="sub" value="submit" display='hidden'>
+  </form>
+
+
+</div>
+
+<div class="screen">
+
+  <pre>
+    {{hangedMan}}
+  </pre>
+
+  <h1 class="hm">{{holder}}</h1>
+
+  <p class="wng">wrong guesses:</p>
+  <p class="wngs">{{wrong}}</p>
+
+</div>
+
+{% endblock %}

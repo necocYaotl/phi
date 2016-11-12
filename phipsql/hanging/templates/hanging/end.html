@@ -1,0 +1,11 @@
+{% extends "hanging/base.html" %}
+
+{% block content %}
+
+<h2 class="description">{{respond}}</h2>
+
+<h2 class="description">and the word was "{{word}}"</h2>
+
+<button type="button" class= "start" name="button"><a href="{% url 'hanging:game' %}" class="btn" >play anew</a></button>
+
+{% endblock content %}

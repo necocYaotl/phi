@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+  <div id='t'>
+    <h1 id="post">{{post.headline}}</h1>
+    <p id="text">
+        {{post.main_text|safe}}
+    </p>
+  </div>
+{% endblock content %}

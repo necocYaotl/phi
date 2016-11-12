@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>the hanging</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'hanging/css/styling.css' %}" type="text/css">
+  </head>
+  <body>
+    <div class="relate">
+
+      <div class="outerdiv">
+        <nav>
+            <ul class="navbar">
+              <li class="n"><a href="/blog/" class="nav">home</a></li>
+              <li class="n"><a href="#" class="nav">account</a></li>
+              <li class="n"><a href="/hanging/" class="nav">hangedMan</a></li>
+            </ul>
+        </nav>
+          {% block content %} {% endblock content %}
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+
+
+{% block content %}
+<div id="content">
+
+
+{% for p in posts_list %}
+    <h1><a href="{% url 'blog:detail' p.id %}">{{p.headline}}</a></h1>
+    <p>
+        {{p.main_text|truncatechars:500|safe}}
+    </p>
+{% endfor %}
+
+</div>
+<div id="sidebar">
+
+<ul>
+  {% for p in posts_list %}
+      <li><a href="{% url 'blog:detail' p.id %}">{{p.headline}}</a></li>
+  {% endfor %}
+</ul>
+</div>
+
+{% endblock %}

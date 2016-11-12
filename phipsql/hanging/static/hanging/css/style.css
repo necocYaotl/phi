@@ -1,0 +1,129 @@
+body{
+  background-color: #EDF2DC;
+  align-self: center;
+}
+
+.relate{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+div.outerdiv {
+  margin: 50px auto 50px auto;;
+  display: block;
+  left: 50px;
+  top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+
+  background-color: #353535;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: #EDF2DC;
+}
+
+ul.navbar {
+    position: absolute;
+    left: 850px;
+    top: 12px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.n {
+    float: right;
+
+}
+
+a.nav {
+    display: block;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav:link {
+    text-decoration: none;
+}
+
+a.nav:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.nav:hover {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*  ========index=========   */
+
+
+.description{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.start{
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  left: 350px;
+  width: 200px;
+  height: 100px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border: 2px;
+  border-color: rgb(217, 205, 205);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.start:hover{
+  background-color: #FFAA00;
+
+}
+
+.btn {
+    font-size: 16px;
+    color: #000000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+}
+
+.btn:link {
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* =========== the hanging ========== */
+
+.terminal{
+  float: left;
+}
+
+pre{
+  color: #FFF;
+}
+
+.t{
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.screen{
+  float: right;
+  padding-top: 50px;
+  padding-right: 80px;
+}

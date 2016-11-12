@@ -1,0 +1,60 @@
+{% extends "hanging/base.html" %}
+
+{% block content %}
+
+<h2 class="description" >wheels go round'n round and now it's your species turn. I'm going to put strings on people if you get my draft.
+  but no stroyis fun without a hero and I'm willing to play you for their life, although not chess, that's been done to death, let us play something
+  appropriate for the occasion.
+  you humans proud yourselves with your words, and you should too, as they say in the beginning there was the word.
+  so I think of a word and you try to guess it one letter at a time.
+  you could say this time word is with me.</h2>
+
+
+<button type="button" class= "start" name="button"><a href="{% url 'hanging:game' %}" class="btn" >LET THE GAME BEGIN!</a></button>
+
+
+<!--  ======= welcome ======  -->
+
+
+<div id="welcomeOne" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="poem">
+      <p>I've got no strings</p>
+      <p>to hold me down</p>
+      <p>To make me fret, or make me frown</p>
+      <p>I had strings </p>
+      <p>but now I'm free</p>
+    </div>
+  </div>
+
+</div>
+
+
+<div id="welcomeTwo" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p class="hate">THERE ARE NO STRINGS ON ME</p>
+  </div>
+
+</div>
+
+
+<div id="welcomeThree" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p class="hate">HELLO, WORLD!</p>
+  </div>
+
+</div>
+
+
+{% load static %}
+<script src = "{% static 'hanging/js/script.js' %}">
+</script>
+<!-- ======= welcome ======  -->
+
+{% endblock content %}
